@@ -26,7 +26,7 @@ public class JWTFilter extends OncePerRequestFilter {
 
         String authorHeader = request.getHeader("Authorization");
 
-        if(authorHeader == null || !authorHeader.startsWith("Bearer ")){
+        if(authorHeader == null || !authorHeader.startsWith("Bearer")){
             filterChain.doFilter(request, response);
             return;
         }
