@@ -1,11 +1,12 @@
 package com.Authentication.Cafe_Demo.Authentication.repository;
 
 
-import com.Authentication.Cafe_Demo.Authentication.model.Author;
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
+import com.Authentication.Cafe_Demo.Authentication.model.Author;
 
 @Repository
 public interface AuthorRepo extends JpaRepository<Author, Long> {
